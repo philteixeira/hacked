@@ -21,7 +21,7 @@ namespace Hacked
                 }
                 else if (hacked.DidWin() == true)
                 {
-                    Console.WriteLine("Congratulations, you found the word and stopped the hacking sequence!");
+                    Console.WriteLine("Congratulations, you found the word and stopped the hacking!");
                     break;
                 }
             }
