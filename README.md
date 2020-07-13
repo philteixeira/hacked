@@ -1,3 +1,3 @@
 # hacked
-Hacked: The Game \n
+Hacked: The Game
 Guess the word before Sombra hacks your computer...
