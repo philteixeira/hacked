@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Hacked
@@ -24,6 +25,8 @@ namespace Hacked
         private string[] codeWords = { "detected", "stealth", "mexico", "ultimate", "talon" };
 
         private Ufo skull = new Ufo();
+
+        private List<string> previousGuess = new List<string>();
 
         public Game()
         {
@@ -53,6 +56,14 @@ namespace Hacked
             {
                 Console.WriteLine("One letter at a time!");
                 return;
+            }
+            if (previousGuess.Contains(userGuess))
+            {
+                Console.WriteLine("You already guessed that letter, try a new one!");
+            }
+            else
+            {
+                previousGuess.Add(userGuess);
             }
             char guess = userGuess.Trim().ToCharArray()[0];
             if (CodeWord.Contains(guess))
