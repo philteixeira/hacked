@@ -60,6 +60,7 @@ namespace Hacked
             if (previousGuess.Contains(userGuess))
             {
                 Console.WriteLine("You already guessed that letter, try a new one!");
+                return;
             }
             else
             {
