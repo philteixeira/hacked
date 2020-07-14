@@ -54,12 +54,12 @@ namespace Hacked
             Console.WriteLine();
             if (userGuess.Trim().Length != 1)
             {
-                Console.WriteLine("One letter at a time!");
+                Console.WriteLine("One letter at a time!\n");
                 return;
             }
             if (previousGuess.Contains(userGuess))
             {
-                Console.WriteLine("You already guessed that letter, try a new one!");
+                Console.WriteLine("You already guessed that letter, try a new one!\n");
                 return;
             }
             else
@@ -80,7 +80,7 @@ namespace Hacked
             }
             else
             {
-                Console.WriteLine($"The letter {guess} isn't in the word. You're getting closer to being hacked!");
+                Console.WriteLine($"The letter {guess} isn't in the word. You're getting closer to being hacked!\n");
                 WrongGuesses++;
                 skull.AddPart();
             }
